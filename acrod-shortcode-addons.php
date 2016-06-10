@@ -1,16 +1,21 @@
 <?php
 /**
- * Plugin Name	:	Acrod Shortcode Addons
- * Plugin URI		: https://github.com/puriwp/acrod-shortcode-addons
- * Description	: Custom shortcode for integrated visual composer plugin.
- * Version			: 1.0
- * Author				: PuriWP
- * Author URI		:	http://puriwp.com/
+ * @link              http://puriwp.com/
+ * @since             1.0.0
+ * @package           Acrod_Shortcode_Addons
+ *
+ * @wordpress-plugin
+ * Plugin Name:		Acrod Shortcode Addons
+ * Plugin URI: 		https://github.com/puriwp/acrod-shortcode-addons
+ * Description: 	Custom shortcode for integrated visual composer plugin.
+ * Version: 			1.0
+ * Author: 				PuriWP
+ * Author URI:		http://puriwp.com/
  */
 
 // don't load directly
-if ( ! defined( 'ABSPATH' ) ) {
-	die( 'You shouldnt be here' );
+if ( ! defined( 'WPINC' ) ) {
+	die;
 }
 
 // Including all shorcodes files
