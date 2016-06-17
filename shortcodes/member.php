@@ -109,7 +109,8 @@ function acrod_member_shortcode( $atts, $content ) {
 
 	extract( $atts );
 
-	$photo = wp_get_attachment_image_src( $photo, 'acrod-related-post' );
+	$photo1	= wp_get_attachment_image_src( $photo, 'acrod-member' );
+	$photo2	= wp_get_attachment_image_src( $photo, 'acrod-related-post' );
 
 	ob_start(); ?>
 
@@ -118,7 +119,7 @@ function acrod_member_shortcode( $atts, $content ) {
 		<?php if ( $type == 'type1' ) : ?>
 
 			<div class="avatar">
-				<img src="<?php echo esc_url( wp_get_attachment_image_src( $photo, array( 80, 80 ) )[0] ); ?>" />
+				<img src="<?php echo esc_url( $photo1[0] ); ?>" />
 			</div>
 
 			<div class="member-content">
@@ -144,7 +145,7 @@ function acrod_member_shortcode( $atts, $content ) {
 		<?php else : ?>
 
 			<div class="avatar">
-				<img src="<?php echo esc_url( wp_get_attachment_image_src( $photo, 'acrod-related-post' )[0] ); ?>" />
+				<img src="<?php echo esc_url( $photo2[0] ); ?>" />
 				<div class="member-content">
 				<p><?php echo do_shortcode( $content ); ?></p>
 					<ul>
