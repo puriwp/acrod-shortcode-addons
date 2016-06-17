@@ -6,7 +6,7 @@ jQuery( document ).ready( function( $ ) {
 		$el,
 		topPosition = 0;
 
-	if ( $( '.portfolio-shortcode .fw-portfolio, .blog-shortcode .post' ).parent().data( 'vc-full-width' ) != 'true' ) {
+	if ( $( '.portfolio-shortcode .fw-portfolio, .blog-shortcode .post' ).parent().parent().data( 'vc-full-width' ) != 'true' ) {
 		$( '.portfolio-shortcode .fw-portfolio, .blog-shortcode .post' ).each( function() {
 
 			$el			= $(this);

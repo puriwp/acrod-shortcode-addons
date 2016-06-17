@@ -109,7 +109,7 @@ function acrod_member_shortcode( $atts, $content ) {
 
 	extract( $atts );
 
-	$photo = wp_get_attachment_image_src( $photo, 'full' );
+	$photo = wp_get_attachment_image_src( $photo, 'acrod-related-post' );
 
 	ob_start(); ?>
 
