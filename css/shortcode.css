@@ -177,6 +177,7 @@
 }
 .overlay_content .fo-fullwidth h4 a {
 	color: #ffffff;
+	font-size: inherit;
 }
 .overlay_content .portfolio-image:hover .fo-fullwidth h4 {
 	top: 0;
